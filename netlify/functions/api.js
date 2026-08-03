@@ -8,7 +8,7 @@ const { v4: uuid } = require('uuid');
 const { createClient } = require('@supabase/supabase-js');
 require('dotenv').config();
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'fuhmie2026';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'changeme_in_production';
 const SESSION_SECRET = process.env.SESSION_SECRET || 'fsv-change-this-secret-in-production';
 
 // Initialize Supabase Client
