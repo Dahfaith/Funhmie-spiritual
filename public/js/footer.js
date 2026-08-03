@@ -107,11 +107,13 @@ export function mountFooter() {
 
         </div>
 
-        <div class="site-footer__bottom">
+        <div class="site-footer__bottom" style="flex-direction: column; gap: var(--space-2); align-items: center; text-align: center;">
           <span class="site-footer__copy">
             &copy; ${new Date().getFullYear()} Fuhmie Spiritual Venture. All rights reserved.
           </span>
-          <a href="#admin" class="site-footer__admin-link">Admin</a>
+          <span class="site-footer__copy" style="font-size: 0.8rem; color: var(--gold-light); letter-spacing: 0.5px;">
+            Designed with ❤️ by VisioReach Concepts
+          </span>
         </div>
       </div>
     </div>
