@@ -62,7 +62,7 @@ api.post('/auth/login', (req, res) => {
   if (!password) return res.status(400).json({ error: 'Password required' });
 
   // In a real app we'd compare hash, but for ease here we compare directly to ADMIN_PASSWORD
-  if (password === ADMIN_PASSWORD) {
+  if (password.trim() === ADMIN_PASSWORD.trim()) {
     req.session.isAdmin = true;
     res.json({ success: true });
   } else {
