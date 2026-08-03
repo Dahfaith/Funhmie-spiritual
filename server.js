@@ -20,7 +20,7 @@ const initSqlJs    = require('sql.js');
 
 // ── Environment ───────────────────────────────────────────────────────────────
 const PORT           = process.env.PORT           || 3000;
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'fuhmie2026';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'changeme_in_production';
 const SESSION_SECRET = process.env.SESSION_SECRET || 'fsv-change-this-secret-in-production';
 const DB_PATH        = path.join(__dirname, 'database.db');
 
